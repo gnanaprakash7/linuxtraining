@@ -1,0 +1,106 @@
+-Linux Administration Training
+
+ssh based authentication:  https://stackoverflow.com/questions/66452084/ssh-authentication-process
+
+Lab1:
+    1) You should know the basic commands
+
+#How to create  a directory
+
+mkdir testing
+
+# How to go inside the directory
+
+cd testing
+
+#Create a empty file
+
+touch readme
+#See contents of file
+
+cat readme
+
+#List all file
+
+ls 
+
+ls -ltr
+
+ls -la
+
+# How to come out from directory
+
+cd ..
+
+#Help page of any command
+man cat
+man ls
+man mkdir
+----------------
+
+Selinux vs apparomor
+
+https://www.techtarget.com/searchdatacenter/tip/Compare-two-Linux-security-modules-SELinux-vs-AppArmor
+
+
+Lab
+
+#udpate the pacakge list
+
+apt-get update
+
+#Install package
+apt-get install apache2
+
+#remove the package
+apt-get remove apache2
+
+#Redhat/centos linux dnf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------
+
+
+
+
+
+
+
+
+
+
+
