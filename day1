@@ -47,60 +47,47 @@ Lab
 
 #udpate the pacakge list
 
-apt-get update
+sudo apt-get update
 
 #Install package
-apt-get install apache2
+sudo apt-get install apache2
 
 #remove the package
-apt-get remove apache2
+sudo apt-get remove apache2
 
 #Redhat/centos linux dnf
 
+Lab 4:
 
+sudo adduser training
 
+#It will prompt for password.. provide any passowrd
 
+#Login to the user
+su training
 
+#try below activty
+sudo apt-get update
 
+#It will give an error
 
+training is not in the sudoers file
 
+--------------------
 
+Lab 5:
+    
+sudo vi  /etc/sudoers 
 
+#Press i <insert mode>
 
+training  ALL=(ALL:ALL) ALL
 
+#You need to press esc+:+wq+! (escape colon wq !)
 
+#Now test
+su training
+sudo apt-get update
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---------------------------------------
-
-
-
-
-
-
-
-
-
-
+------------------
 
