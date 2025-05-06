@@ -1,0 +1,318 @@
+OS: What is operation system?
+
+Android : OS (CPU scheduling and memory management)
+
+Software which manages the hardware. It takes the command from user and execute on the h/w.
+
+OS: Linux, windows, ios
+
+Linux is an OS, which is developed on Unix os
+
+Unix initial os:develop by bell labs (Dannis Rechie and Ken Tompson)
+
+Linux : Devloped on Top unix os: Linus Torvalds. Opensource os
+
+--Cli based os
+-- When you go and see your production impletantion, it will non gui environment.
+-- It gives good performance. It is not easy for others to perfrom
+-- EC2 vm  (Linux flavour) : Graphics interface
+-- Security, its not that easy to use for non-tech persons
+
+Difference between Linux vs Unix:
+
+Unix os: doesn't have user friendly interfaces, not easy to install
+-- Not many scripting support was available in case unix os
+-- Multi  users env.
+-- Not many packages has developed
+
+
+------------------
+What is authentication: Login to the system authentication
+basic authentication: user name + password
+ssh authentication--> key pair (ppk file,pem file)
+
+username@<public ip of ec2 instance)
+Private key
+
+
+Ssh-->key pair authentication ( private key, public key)
+
+I am initating private key with key, and upload the public key to the ec2 system
+
+-->encrypt the handshake using private key(pem,ppk file)------>decrpt it using public
+
+----------------------------------------
+
+Distribution:
+
+Variation of Linux. Linux opensource project
+
+Debian, Fedora, Centos (Rocky Linux), Rhel, Ubuntu, suse Linux
+
+Enterprise level: We need to take licence [Commerical use]
+The GNU General Public License (GPL) is a free software license that guarantees end-users the freedom to use, study, share, and modify the software.
+
+----------------
+Login: username
+password:<just type it, it will show anything)
+
+1) You should know the basic commands
+
+#How to create  a directory
+
+mkdir testing
+
+# How to go inside the directory
+
+cd testing
+
+#List all file
+
+ls 
+
+ls -ltr
+
+ls -la
+
+# How to come out from directory
+
+cd ..
+-----------------------
+
+What is openshift?
+
+Openshift is redhat enterprise solution for Kubernetes and containers. Its a software for
+container management
+
+Kubernetes: Opensource project from Linux foundation  Container management tool
+
+Openshift Redhat
+VMware Tanzu VMware
+Rancher: Suse Linux
+aks: Microsoft azure
+eks: aws
+gke: google
+
+---------------------------------
+
+In ubuntu/debian package installer is apt
+APT (Advanced Package Tool) is the default package manager for Ubuntu, a tool used for installing, updating, and removing software (deb)
+
+you will be using "apt" command
+
+DNF (Dandified YUM) is a package manager for RPM-based Linux distributions like Fedora, Rocky Linux, and Red Hat Enterprise Linux (RHEL). It's the successor to YUM(rpm)
+
+It's important to understand that certain Linux distributions default to either AppArmor or SELinux. For example, RHEL, Rocky Linux, AlmaLinux, CentOS Stream and Fedora all use SELinux.
+
+On the other hand, Ubuntu, Debian, SUSE Linux Enterprise Server, openSUSE and most all Ubuntu/Debian derivatives use AppArmor.
+
+-------------------------
+
+Two types of package:
+--Default packages which is the part of os image.
+
+--Third party packages, you need to manually map the third party repository and then install it
+------------
+
+ apt-get install apache2
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+------------
+
+When you want to install package in any Linux, you must have root rights.
+
+root (superuser)/ Administrator of windows: User who has administrative privlideges
+
+----
+you need to download the latest package list..
+
+sudo  apt-get update
+--------------------------------
+
+What is sudo?
+In Linux and other Unix-like operating systems, "sudo" (short for "superuser do") is a command-line utility that allows users to run commands with elevated privileges, effectively acting as the root user without logging out of their regular account. 
+
+---------------------
+It is not necessary that all the users are the part of sudo group
+
+user  is not in the sudoers file. These user cannot perform any activity where super user privlidges are required
+
+
+All the Linux os configuration information store under /etc
+
+In a Linux system, the /etc directory serves as the central repository for system-wide configuration files. It contains various files that control the behavior of the operating system and its installed applications. 
+
+-----------------
+
+Listing process in Linux
+
+sudo ps 
+
+sudo ps aux
+
+sudo top 
+
+--------------
+check which command executed
+
+history
+
+----------------------
+
+Check Linux kernel
+
+sudo uname -a
+
+----------
+
+Check ubuntu release
+
+sudo cat /etc/lsb-release
+
+---------
+
+Check ip address
+
+sudo ip addr|grep ens
+
+---------------
+log file location
+
+sudo ls /var/log/
+
+------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
