@@ -1,0 +1,286 @@
+Day 2 Linux
+
+Linux OS: Debian/ubuntu
+
+-------------------------------------
+Some basic Linux cli
+
+Where exactly you execute the command in Linux?
+
+Shell: Interface where you can connect and execute the command
+
+The shell is the Linux command line interpreter. It provides an interface between the user and 
+the kernel and executes programs called commands.
+
+Shell
+---
+os
+-----
+hardware
+
+Shell is program: bash,sh,zsh,ksh[each shell has own properties]
+
+On most Linux systems a program called bash (which stands for Bourne Again SHell, an enhanced version of the original Unix shell program, sh,
+ written by Steve Bourne) acts as the shell program. Besides bash, there are other shell programs available for Linux systems.
+ These include: ksh, tcsh and zsh.
+
+--------------------------------------------------
+
+Shell scripting: All of this shell support commands. 
+
+you will writing the command in file and executing it out. and the file extension will ".sh"
+
+-------------
+
+Linux editor [vi and nano]
+
+
+1) If i want to open a file using vi:[ If file is there, it will open that one, or else it will create new file
+
+vi testfile.sh
+
+2) If you want add something, you will enable the insert mode by pressing "i"
+
+3) Then if you want to save it, come out from the insert mode by pressing: esc
+
+4) If you want to save file  :wq+enter
+
+5) If you don't want to save file :q!
+
+-----------
+
+Touch nd VI? touch is used to create empty files or update file timestamps, without opening or modifying the file's content. 
+vi, on the other hand, is a text editor used to open, edit, and save file contents interactively
+cat is for reading file.
+
+----
+
+Industry: Datacenter env you will majority of the products are Linux based only.
+
+
+OTT-->consumers
+
+
+
+----------------------------
+OS(opensource): Linux distribution
+-----------------
+DC-->many server,storage
+
+https://netflixtechblog.com/tagged/microservices
+
+----------------------------
+
+Host a website on Linux : https://www.digitalocean.com/community/tutorials/how-to-install-lamp-stack-on-ubuntu
+
+		
+
+----------------------
+
+
+1) Create a file with .sh extension
+
+2)The shell command interpreter is the command line interface between the user and the operating system
+
+3) #!/bin/bash, #!/usr/bin/python, #!/usr/bin/perl
+
+4) #!she-bang
+
+How to provide permission on the file
+
+https://gps.uml.edu/tutorials/unix-linux/linux/chmod.htm
+-------------------------------------------
+
+Use case:
+
+Shell scripting widely used for routine 
+
+apt-get install apahce2
+
+1) Manager gives you 	assignment develop a shell script to install a pacakge : 
+
+   Before writing the code: Flow charts
+
+  1) Check the package is already installed or not?
+
+  2) If yes-->exit
+
+  3) If no--> ask the user do you want to install the package
+
+  4) If yes-->proceed
+  
+  5) IF pacakge is running some , check that service is running not
+
+----------------------------------
+
+A variable in Bash is a symbolic name that stores a value, which can be a string or a number. Variables are used to store and
+ manipulate data within scripts or commands. 
+Defining a Variable
+
+To define a variable in Bash, you use the following syntax:
+
+variable_name=value
+
+package="apache2"
+
+
+The echo command in Bash is used to display text or variables to the standard output, typically the terminal. It's a fundamental command for shell scripting and interacting with the command line.
+Basic Usage: To display a simple message.
+echo "Hello, World!
+
+Using the read command:
+The read command is the primary way to get input from the user. It reads a line from standard input and assigns it to a variable.
+
+read variable_name
+
+
+Conditional statement
+
+read -p "Do you want to proceed? (yes/no) " answer
+
+if [[ "$answer" == "yes" || "$answer" == "y" || "$answer" == "Y" || "$answer" == "YES" ]]; then
+  echo "Proceeding..."
+  # Code to execute if the user answers yes
+else
+  echo "Exiting..."
+  # Code to execute if the user answers no or invalid
+  exit 1
+fi
+
+----------------
+
+# Step 1: Check if package is installed
+if dpkg -l | grep -q "^ii\s\+$PACKAGE"; then
+    echo "$PACKAGE is already installed."
+    # Step 5: Check if the service is running
+    if systemctl is-active --quiet $PACKAGE; then
+        echo "Service $PACKAGE is running."
+    else
+        echo "Service $PACKAGE is not running. Starting it..."
+        sudo systemctl start $PACKAGE
+    fi
+    exit 0
+fi
+
+# Step 3: Ask user for installation
+read -p "$PACKAGE is not installed. Do you want to install it? (y/n): " answer
+if [[ "$answer" =~ ^[Yy]$ ]]; then
+    echo "Installing $PACKAGE..."
+    sudo apt update
+    sudo apt install -y $PACKAGE
+    echo "$PACKAGE installed."
+
+    # Step 5: Start the service
+    echo "Starting $PACKAGE service..."
+    sudo systemctl start $PACKAGE
+    echo "$PACKAGE service started."
+else
+    echo "Installation aborted by user."
+    exit 1
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
