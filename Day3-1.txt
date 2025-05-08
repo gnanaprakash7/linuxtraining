@@ -1,0 +1,390 @@
+Day3 
+
+scp: secure copy
+
+when you want to copy the file between  two Linux os using ssh
+
+scp <nameoffile>  username@ipaddress:/<location
+
+expample 
+scp /tmp/task2.txt  amit@192.168.111.130:/home/amit/
+
+The SCP command enables you to conveniently copy files from remote machines to local nodes. You can also use this command to copy files from a virtual machine to the local host
+
+
+-----------------------------------------------------------
+
+Now How will I practices?
+
+Shell practices: You need to create story?
+
+https://stackoverflow.com/questions/tagged/shell
+
+
+------------------
+
+Devops:  Developers+Operations: It is methodology to implement software devolpment life cycle
+
+
+Developer: Write the code 
+
+Why developer code? Either they are building a new software or they are fixing the issues.
+
+
+What is the operations? When product has to install in production and do the production take care
+
+
+
+Whenever developer fix code--->build package-->test the package-->apply it in production
+
+
+We are designing a flow where code fix will be package,tested and deployed in the production.
+
+Pipeline
+
+
+Whatever you are seeing in playstore-->apk package, exe, msi, rpm ,deb
+------------------------------------------------------------------------------------
+SDLC: Software development life cycle:
+
+-->They plan : Why I need it? Is customer has some demand? (Planning is the first phase)
+
+--> Writing the code
+
+--> Test code ( Functional,system testing)
+
+--> Deliver product
+
+
+Water fall model
+
+--
+  |__
+ 
+
+up to down (plan (completed)-->coding +Testing--> (need lot procees, that takes times)
+
+2 to 3 years..
+
+
+But current sceranio, everyone is releasing product in 6 month -1 year
+
+Samsung/Apple/Microsoft
+
+
+Agile: Any time I want to change anything? can I change?
+
+
+--->Whenever devolper fix anything--> can we automate this process to complete rest of stuf
+
+
+code->build->Test-->release
+
+As or when any developer in the product make change, can we go create package and test it out..
+
+
+
+software -->100 dev
+
+dev->code change-->immediately-->there is issue-->I can go and revert the DEv A change
+
+
+
+----
+
+dev A,B,C,D-->face the issue-->4 dev chagnes-->which code change is failing
+
+CI/CD-->Continuous intergration and continuous delivery (pipeline)
+
+do you know git?
+---------------------------
+
+
+You as developer-->you write code--->60 of us working together-->then how we will share and intergrate code?
+
+
+Dev->website
+
+3 dev--
+
+1 dev-->Db for website-->In their dev box
+
+1 dev-->frontend
+
+1 dev->middleware
+
+What I need to do to create website??
+
+
+Intergrate code-->
+
+WE need to publish the code to source code management sites.
+
+git and GitHub
+
+-------------------------------------------
+
+What is git?
+
+You need to manage that code. source code management?
+
+
+Version control system
+
+Suppose as dev-->you are fixing code-->testing out-->
+ code is failing-->you try to revert it
+
+
+When ever you are making the code changes, you must enable the tracking so in -case of failure you revert badc
+
+--->code--> abc-->v1-->describption in the message
+
+--->def-->v2
+
+--> def-->v3
+
+--->hij-->v4
+
+Recording the code change using version
+
+
+---------------
+
+git-->git is a application for version control. It is by default available in Linux system
+
+You can install on windows and macos
+------------------------------------------------------------
+
+
+Using the git we will do the version control?
+
+What is GitHub/GitLab/bitbucket? Hosting website to host the git projects.
+
+-----------------------------------
+
+What is git Bash for?
+Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands.
+
+
+git init command will covert a directoy into git repository.
+
+git init will create a subdirectory .git, which will do the version control
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
