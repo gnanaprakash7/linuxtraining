@@ -1,0 +1,226 @@
+Day 4: 
+
+AWS codebuild
+
+------------------------------
+
+Summary of Day 3:
+
+Version control: To track the code changes, in-case of failure you can revert that back
+
+
+git: is version control software ( Linux ->by-default)
+
+-->windows/mac
+
+GitHub/GitLab/bitbucket-->hosting service to host the git projects.
+
+
+1) Created a directory : mkdir testlab
+2) Gone into the directory: cd testlab
+3) when I execute command "git status"--> Not a git directory.
+4) To convert a normal directory into a git directory , we need to run command "git init"
+5) it creates .git subdirectory, which git usage for version control.
+
+.git-->config,head,object,refs
+
+6) We created a file using vi and started writing the code. suppose the file created: test.sh
+7) git status: untraced file.
+8) For tracking "git add test.sh"
+9) we again run command "git status"--> Yet to commit (Changes are not recorded, against the version)
+10) git commit -m "add" 
+11) git status (it will show nothing to commit)
+12) git logs 
+-------------------------------------------------------
+
+How to push the code to GitHub (I want to upload the code)
+
+instragram/facebook-->upload something-->you need to login, sameway to push the code to GitHub we need to login first from command line
+
+1) Login (authentication)
+
+	-- ssh based (you will be having, privatekey and publickey) -->public key need to be uploaded to GitHub for authentication
+	-- https based (username/ Personal access token or password)
+
+2) ssh based authentication
+
+3) Login to Linux environment and login to github
+
+4) You will go to your git directory.
+
+5) For ssh authentication we need to create public/private key pair
+
+6) ssh-keygen -t rsa
+
+
+Local git repo-->remote GitHub repo
+
+-->What kind of authentication we are using for githbu
+
+-->ssh
+
+------------------
+
+
+AWS codebuild-->AWs codebuild is fully managed aws service for building the package from source code..
+
+
+
+GitHub (Sourcecode)-->awscode-->package
+
+
+1) Java (design java)
+
+2) Compilation code
+
+3) Package (.jar or .war)
+
+
+-->source code( developer) will push it to github-->code-->Yaml file in side aws codebuild.
+
+Yaml-->yet another markup language.
+
+
+-->Define in the yaml file how to build the package from the source code-->
+
+-->Package is ready (Artifacts)
+
+
+AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy. With CodeBuild, you don’t need to provision, manage, and scale your own build servers. CodeBuild scales continuously and processes multiple builds concurrently, so your builds are not left waiting in a queue.
+
+
+
+code-->copy that code (Linux/and windows)
+
+-->install java
+-->package
+
+
+Maven is a build automation and project management tool, primarily used for Java projects, but also adaptable for other languages. It automates tasks like compiling code, managing dependencies, packaging applications, and running tests. Maven's core concept is based on a Project Object Model (POM), which defines how a project is built and managed
+
+They will create the java pacakges.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
